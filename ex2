@@ -1,0 +1,12 @@
+def checksA(s):
+    s = s.lower()
+    return s.count('a')
+    
+    
+if __name__ == '__main__':
+    s = input()
+    n = checksA(s)
+    if n > 0:
+        print("Há %d as na string" % n)
+    else:
+        print("Não há nenhum a na string")
