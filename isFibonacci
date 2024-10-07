@@ -13,4 +13,7 @@ def isFib(n):
     
 if __name__ == '__main__':
     n = int(input())
-    print(isFib(n))
+    if isFib(n):
+        print("O número faz parte da sequência de Fibonacci")
+    else:
+        print("O número não faz parte da sequência de Fibonacci")
