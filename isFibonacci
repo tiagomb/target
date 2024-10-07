@@ -1,0 +1,16 @@
+def isFib(n):
+    if n == 0 or n == 1:
+        return True
+    a, b, c = 0, 1, 0
+    while c < n:
+        c = a+b
+        a = b
+        b = c
+    if c == n:
+        return True
+    return False
+    
+    
+if __name__ == '__main__':
+    n = int(input())
+    print(isFib(n))
